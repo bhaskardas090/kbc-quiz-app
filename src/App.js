@@ -27,7 +27,7 @@ function App() {
             )}
           </div>
           <div className="prizePart">
-            <Prize />
+            <Prize currentQuestion={currentQuestion} />
           </div>
         </div>
       </div>

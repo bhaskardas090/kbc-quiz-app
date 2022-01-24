@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './prize.module.css';
 
-export default function Prize() {
+export default function Prize({currentQuestion}) {
   const prizeList = [
     { id: 1, amount: "$ 100" },
     { id: 2, amount: "$ 200" },
@@ -22,7 +22,7 @@ export default function Prize() {
   return (
   <div className={styles.prizes}>
     {prizeList.map(prize => (
-    <div className={`${styles.prize} ${styles.active}`}>
+    <div className={(currentQuestion + 1 )=== prize.id ?(`${styles.prize} ${styles.active}`):(`${styles.prize}`)}>
       <div className={styles.amountLevel}>{prize.id}</div>
       <div className={styles.amount}>{prize.amount}</div>
     </div>

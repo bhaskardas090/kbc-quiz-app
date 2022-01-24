@@ -14,9 +14,6 @@
   padding: 1rem;
   border-radius: .5em;
 }
-.prize:hover{
-  background-color: #46d4d6;
-}
 
 .amountLevel, .amount{
   font-size: 2rem;
@@ -26,6 +23,6 @@
   margin-right: 7rem;
 }
 
-/* .active{
-  background-color: #036466;
-} */
+.active{
+  background-color: #46d4d6;
+}
