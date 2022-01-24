@@ -1,0 +1,13 @@
+.timerButton{
+  border: none;
+  position: absolute;
+  bottom: 15%;
+  right: 45%;
+  font-size: 5rem;
+  padding: 1rem;
+  border-radius: 50%;
+  border: 5px solid white;
+  font-weight: bold;
+  color: white;
+  background-color: transparent;
+}
