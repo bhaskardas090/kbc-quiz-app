@@ -1,0 +1,31 @@
+.questions{
+  position: absolute;
+  bottom : 15%;
+  width :100%;
+}
+.question{
+  font-size: 3.5rem;
+  background-color: black;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.options{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+  text-align: center;
+}
+.answer{
+  font-size: 2.5rem;
+  width: 40%;
+  padding:1rem;
+  margin:1rem;
+  background-color: black;
+  cursor: pointer;
+}
