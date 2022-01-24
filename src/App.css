@@ -6,19 +6,25 @@
 
 .App{
   width: 100%;
+  color: white;
 }
 
 .quiz-app{
   display: flex;
 }
+
 .quizPart{
-  flex: 7;
   background-color: rgb(245, 144, 144);
+  flex: 7;
   height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), #100241), url('./img/bgImg.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .prizePart{
   flex: 3;
-  background-color: aquamarine;
+  background-image: linear-gradient(#100241, #180032);
   height: 100vh;
 }
 
