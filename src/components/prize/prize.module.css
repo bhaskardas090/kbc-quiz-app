@@ -1,0 +1,31 @@
+.prizes{
+  position: absolute;
+  bottom: 4rem;
+  display: flex;
+  height: 85%;
+  width: 80%;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 4rem;
+}
+.prize{
+  display: flex;
+  justify-content: start;
+  padding: 1rem;
+  border-radius: .5em;
+}
+.prize:hover{
+  background-color: #036466;
+}
+
+.amountLevel, .amount{
+  font-size: 2rem;
+}
+
+.amountLevel{
+  margin-right: 7rem;
+}
+
+/* .active{
+  background-color: #036466;
+} */

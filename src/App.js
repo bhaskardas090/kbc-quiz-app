@@ -1,4 +1,5 @@
 import './App.css';
+import Prize from './components/prize/Prize';
 import Questions from './components/questions/Questions';
 
 function App() {
@@ -8,7 +9,9 @@ function App() {
         <div className="quizPart">
           <Questions />
         </div>
-        <div className="prizePart">Prize Part</div>
+        <div className="prizePart">
+          <Prize />
+        </div>
       </div>
     </div>
   );

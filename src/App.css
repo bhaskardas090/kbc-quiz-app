@@ -16,7 +16,7 @@
 
 .quizPart{
   background-color: rgb(245, 144, 144);
-  flex: 7;
+  flex: 8;
   height: 100vh;
   position: relative;
   background-image: linear-gradient(to bottom, rgba(0,0,0,0), #100241), url('./img/bgImg.jpg'); 
@@ -29,5 +29,6 @@
   flex: 3;
   background-image: linear-gradient(#100241, #180032);
   height: 100vh;
+  position: relative;
 }
 
