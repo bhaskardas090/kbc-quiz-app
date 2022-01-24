@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from './timer.module.css';
 
-export default function Timer() {
+export default function Timer({setEndScreen}) {
   const [time, setTime] = useState(30);
 
   useEffect(() => {
@@ -11,6 +11,9 @@ export default function Timer() {
       return () => clearTimeout(timer);
   }, [time]);
   
+  if(time == 0) {
+    setEndScreen(true);
+  }
   
   return (
     <div className={styles.timer}>

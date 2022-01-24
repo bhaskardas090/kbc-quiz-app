@@ -15,7 +15,7 @@ function App() {
           <div className="quizPart">
             {!endScreen ? (
               <>
-                <Timer />
+                <Timer setEndScreen={setEndScreen} />
                 <Questions
                   currentQuestion={currentQuestion}
                   setCurrentQuestion={setCurrentQuestion}
