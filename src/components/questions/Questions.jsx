@@ -7,10 +7,14 @@ export default function Questions({currentQuestion, setCurrentQuestion, setEndSc
 
   const handleClick = (index) => {
     const {correctIndex} = questions[currentQuestion];
-    if(index === correctIndex) {
+    const lastQuestionIndex = questions.indexOf(questions[questions.length -1]);
+
+    if(lastQuestionIndex === currentQuestion && index === correctIndex) {
+      setCurrentQuestion(lastQuestionIndex + 1);
+      setEndScreen(true);
+    } else if (index === correctIndex) {
       setCurrentQuestion(prevCurrentQuestion => prevCurrentQuestion + 1);
       setTime(30);
-
     } else {
       setEndScreen(true);
     }
