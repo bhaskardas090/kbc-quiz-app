@@ -9,17 +9,17 @@ export default function Endscreen({name, currentQuestion}) {
          <div>
           {name && (
           <div>
-            <div className={styles.endscreenTitle}>Sorry!{name}.</div>
-            <div className={styles.endscreenSub}>You have won $0</div>
+            <div className={styles.endscreenTitle}>Sorry! {name}</div>
+            <div className={styles.endscreenSub}>You have won <span className={styles.endscreenMoney}>$0</span></div>
           </div>
           )}
         </div>
       ) : (
         <div>
           {name && (
-          <div>
-            <div className={styles.endscreenTitle}>Congratulations!{name}.</div>
-            <div className={styles.endscreenSub}>You have won {prizeList[prizeList.length - currentQuestion].amount}</div>
+          <div> 
+            <div className={styles.endscreenTitle}>Congratulations! {name}</div>
+            <div className={styles.endscreenSub}>You have won <span className={styles.endscreenMoney}>{prizeList[prizeList.length - currentQuestion].amount}</span></div>
           </div>
         )}
         </div>
