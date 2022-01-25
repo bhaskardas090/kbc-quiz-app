@@ -8,6 +8,7 @@ import Endscreen from './components/endscreen/Endscreen';
 function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [endScreen, setEndScreen] = useState(false);
+  const [time, setTime] = useState(30);
   return (
     <div className="App">
       <div className="trivia">
@@ -15,11 +16,16 @@ function App() {
           <div className="quizPart">
             {!endScreen ? (
               <>
-                <Timer setEndScreen={setEndScreen} />
+                <Timer
+                  setEndScreen={setEndScreen}
+                  time={time}
+                  setTime={setTime}
+                />
                 <Questions
                   currentQuestion={currentQuestion}
                   setCurrentQuestion={setCurrentQuestion}
                   setEndScreen={setEndScreen}
+                  setTime={setTime}
                 />
               </>
             ) : (

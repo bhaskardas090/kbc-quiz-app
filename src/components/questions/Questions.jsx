@@ -3,12 +3,14 @@ import {questions} from '../../Questions';
 import hint from '../../img/hint.png';
 import doubledip from '../../img/doubledip.png';
 
-export default function Questions({currentQuestion, setCurrentQuestion, setEndScreen}) {
+export default function Questions({currentQuestion, setCurrentQuestion, setEndScreen, setTime}) {
 
   const handleClick = (index) => {
     const {correctIndex} = questions[currentQuestion];
     if(index === correctIndex) {
       setCurrentQuestion(prevCurrentQuestion => prevCurrentQuestion + 1);
+      setTime(30);
+
     } else {
       setEndScreen(true);
     }
