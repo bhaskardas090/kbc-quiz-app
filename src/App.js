@@ -32,7 +32,7 @@ function App() {
                   />
                 </>
               ) : (
-                <Endscreen />
+                <Endscreen name={name} currentQuestion={currentQuestion} />
               )}
             </div>
             <div className="prizePart">
